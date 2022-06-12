@@ -1,0 +1,66 @@
+@import 'mixin';
+@import 'colors';
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: $darker;
+    background-color: $bright;
+}
+
+.title {
+    text-align: center;
+}
+
+.card {
+    background-color: $brighter;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.center-xy {
+    @include xy-center;
+}
+
+.center-y {
+    @include vertical-center;
+}
+
+.center-x {
+    @include horizontal-center;
+}
+
+.fullScreen {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+@for $i from 1 through 1000 {
+    .width-#{$i} { width: #{$i}px; } 
+}
+
+@for $i from 1 through 100 {
+    .mw-#{$i} { max-width: 1% * $i } 
+}
+
+.debug {
+    @include debug;
+}
+
+$back-size: 40px;
+.back-button {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: $back-size;
+    height: $back-size;
+    text-align: center;
+    line-height: $back-size;
+    border-radius: 50%;
+}
+.back-button:hover {
+    color: $primary;
+}
