@@ -1,6 +1,6 @@
 {
   "name": "DnD-Character-Sheet",
-  "homepage": "https://github.com/phinziegler/DnD-Character-Sheet/",
+  "homepage": "https://phinziegler.github.io/DnD-Character-Sheet/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
